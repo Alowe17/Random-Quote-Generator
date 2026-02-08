@@ -11,3 +11,7 @@ A simple JavaScript application that displays a random quote from a predefined l
 - HTML
 - CSS
 - JavaScript
+
+## Network
+
+![Network tab](assets/network.png)
