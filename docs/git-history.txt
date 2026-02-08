@@ -1,0 +1,222 @@
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~
+$ cd "C:\Users\R 5500\Desktop\Папки\devsecops"
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops
+$ git clone https://github.com/Alowe17/Random-Quote-Generator
+Cloning into 'Random-Quote-Generator'...
+warning: You appear to have cloned an empty repository.
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops
+$ cd "C:\Users\R 5500\Desktop\Папки\devsecops\Random-Quote-Generator"
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (main)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git add .
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git commit -m "chore: initial project structure"
+[master (root-commit) dc5027f] chore: initial project structure
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 CHANGELOG.md
+ create mode 100644 INSTALL.md
+ create mode 100644 README.md
+ create mode 100644 src/app.js
+ create mode 100644 src/index.html
+ create mode 100644 src/style.css
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git remote -v
+origin  https://github.com/Alowe17/Random-Quote-Generator (fetch)
+origin  https://github.com/Alowe17/Random-Quote-Generator (push)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 351 bytes | 351.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Alowe17/Random-Quote-Generator
+ * [new branch]      master -> master
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git add README.md
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git commit -m "docs: add project description to README"
+[master a0c43b5] docs: add project description to README
+ 1 file changed, 13 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git remote add origin https://github.com/Alowe17/Random-Quote-Generator
+error: remote origin already exists.
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git branch
+* master
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push --set-upstream origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 503 bytes | 503.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Alowe17/Random-Quote-Generator
+   dc5027f..a0c43b5  master -> master
+branch 'master' set up to track 'origin/master'.
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git add INSTALL.md
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git commit -m "docs: add installation instructions"
+[master 13f7002] docs: add installation instructions
+ 1 file changed, 6 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alowe17/Random-Quote-Generator
+   a0c43b5..13f7002  master -> master
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git checkout -b feature/random-quote
+Switched to a new branch 'feature/random-quote'
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git add src/index.html
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git commit -m "feat: add base HTML layout"
+[feature/random-quote 3982c5e] feat: add base HTML layout
+ 1 file changed, 15 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git add src/app.js
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git commit -m "feat: implement random quote logic"
+[feature/random-quote 68194dc] feat: implement random quote logic
+ 1 file changed, 13 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git add src/style.css
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git commit -m "feat: add basic styles"
+[feature/random-quote d3003aa] feat: add basic styles
+ 1 file changed, 5 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git add CHANGELOG.md
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git commit -m "docs: add CHANGELOG.md"
+[feature/random-quote c38572c] docs: add CHANGELOG.md
+ 1 file changed, 5 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (feature/random-quote)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git merge feature/random-quote
+Updating 13f7002..c38572c
+Fast-forward
+ CHANGELOG.md   |  5 +++++
+ src/app.js     | 13 +++++++++++++
+ src/index.html | 15 +++++++++++++++
+ src/style.css  |  5 +++++
+ 4 files changed, 38 insertions(+)
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push
+Enumerating objects: 21, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 1.79 KiB | 1.79 MiB/s, done.
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/Alowe17/Random-Quote-Generator
+   13f7002..c38572c  master -> master
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git branch -d feature/random-quote
+Deleted branch feature/random-quote (was c38572c).
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push origin --delete feature/random-quote
+error: unable to delete 'feature/random-quote': remote ref does not exist
+error: failed to push some refs to 'https://github.com/Alowe17/Random-Quote-Generator'
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git add assets/network.png README.md
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git commit -m "docs: add network tab screenshot"
+[master 4d93f7a] docs: add network tab screenshot
+ 2 files changed, 4 insertions(+)
+ create mode 100644 assets/network.png
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 25.84 KiB | 25.84 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alowe17/Random-Quote-Generator
+   c38572c..4d93f7a  master -> master
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$ git log --oneline --graph --all
+* 4d93f7a (HEAD -> master, origin/master) docs: add network tab screenshot
+* c38572c docs: add CHANGELOG.md
+* d3003aa feat: add basic styles
+* 68194dc feat: implement random quote logic
+* 3982c5e feat: add base HTML layout
+* 13f7002 docs: add installation instructions
+* a0c43b5 docs: add project description to README
+* dc5027f chore: initial project structure
+
+R 5500@DESKTOP-KP4ESLI MINGW64 ~/Desktop/Папки/devsecops/Random-Quote-Generator (master)
+$
